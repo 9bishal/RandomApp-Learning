@@ -18,7 +18,7 @@ export default function App() {
     
     <View style={styles.buttonContainer}>
       <Button title="-" onPress={decreaseCount} />
-      <Button title="+" onPress={increaseCount} />
+      <Button title="+" onPress={increaseCount} /> {/* Added gap between buttons */}
     </View>
   </View>
 );
@@ -35,6 +35,7 @@ const styles = StyleSheet.create({
     marginBottom: 40,
   },
   buttonContainer: {
+    // fontSize: 68,
     flexDirection: 'row',
     gap: 20,
   },
